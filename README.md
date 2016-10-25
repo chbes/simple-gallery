@@ -1,1 +1,3 @@
 # simple-gallery
+	A simple web compoment for add a image gallery in your website.
+	In developpement ....
