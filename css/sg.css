@@ -1,3 +1,10 @@
+/*pour le dev*/
+html {
+    min-height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
 body {
     background: #F5F5F5;
 }
@@ -11,7 +18,8 @@ img {
 }
 
 #modal1 {
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.5);/*Initule?*/
+    z-index: 99;    
 }
 
 #modal1 img {
@@ -20,4 +28,11 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
+    filter: grayscale(0);
+}
+
+.flou {
+    filter: grayscale(1);
+    z-index: 1;
 }
