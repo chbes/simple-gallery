@@ -1,9 +1,8 @@
-/*Penser a bien "encapsulé" les styles dans un clas sg, pour ne pas interferer avec les autres styles*/
+/*Penser a bien "encapsulé" les styles dans une class sg, pour ne pas interferer avec les autres styles*/
 
 /*pour le dev*/
 html {
     min-height: 200vh;
-    z-index: 1;
 }
 
 body {
@@ -16,26 +15,16 @@ body {
 
 img {
     width: 100%;
+    border: 2px dotted #e29;
 }
 
-/*#modal1 {
-    background-color: rgba(0, 0, 255, 0.5);
-    z-index: 99;    
-}*/
-
-/*#modal1 img {
-    width: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 99;
-    filter: grayscale(0);
-}*/
-
-.flou {
-    filter: grayscale(1);
-    z-index: 1;
+.blur {
+    /*overflow: auto ;*/
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
 }
 
 /* The Modal (background) */
@@ -48,9 +37,8 @@ img {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: hidden; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    /*filter: grayscale(1);*/
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    /**/
 }
 
 /* Modal Content/Box */
@@ -69,4 +57,5 @@ img {
 .sg-modal-content img{
     width: auto;
     border-radius: 0.4em;
+    border: none;
 }
