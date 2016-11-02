@@ -1,16 +1,5 @@
-/*Penser a bien "encapsulé" les styles dans une class sg, pour ne pas interferer avec les autres styles*/
-
-/*pour le dev*/
-html {
-    min-height: 200vh;
-}
-
-body {
-    background: #F5F5F5;
-}
-
 .sg {
-    background: #4f65dc;
+    background: transparent;
     padding: 0.5em;
 }
 
@@ -20,19 +9,11 @@ body {
 
 .sg img {
     width: 100%;
-    /*border: 2px dotted #e29;*/
     border-radius: 0.1em;
     transition: all 1.8s ease-out;
 }
 
-
-
-/*img:hover {
-    transform: scale(1.05);
-}*/
-
-.blur {
-    /*overflow: auto ;*/
+.sg-filter-blur {
     -webkit-filter: blur(2px);
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
@@ -40,7 +21,6 @@ body {
     filter: blur(2px);
 }
 
-/* The Modal (background) */
 .sg-modal {
     display: none;
     position: fixed; 
@@ -53,14 +33,10 @@ body {
     background-color: rgba(0,0,0,0.7); 
 }
 
-/* Modal Content/Box */
 .sg-modal-content {
     z-index: 3;
     background-color: transparent;
-    margin: 2em auto; /* 15% from the top and centered */
-    /*padding: 20px;*/
-    /*border: 1px solid #888;*/
-    /*width: 80%; *//* Could be more or less, depending on screen size */
+    margin: 2em auto;
     width: auto;
     max-height: 100vh;
     text-align: center;
@@ -70,4 +46,6 @@ body {
     width: auto;
     border-radius: 0.4em;
     border: none;
+    padding: 0.6em;
+    background-color: rgba(250,250,250,0.88);
 }
